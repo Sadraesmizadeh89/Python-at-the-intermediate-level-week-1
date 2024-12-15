@@ -1,0 +1,12 @@
+s = "java created by rossum and Mohammad"
+# {'hamed':3,'python':1}
+new_s = s.split(' ')
+
+d = {}
+
+for i in new_s:
+    if i == 'hamed' or i == 'python':
+        d[i] = d.get(i,0) + 1
+    elif i != 'hamed' or i != 'python':
+        d[i] = d.get(i, 'Not found')
+print(d)
